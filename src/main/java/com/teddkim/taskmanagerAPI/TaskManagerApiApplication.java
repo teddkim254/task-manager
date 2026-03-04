@@ -43,7 +43,9 @@ public class TaskManagerApiApplication {
 
   Scanner scanner = new Scanner(System.in);
 
-  Task tasks = new Task(Tittle);
+  // all this can't work on a web server app lol!!!!😭😭😭
   System.out.println("Enter new task Titlle: ");
-  Tittle = scanner.nextLine();
+  tittle = scanner.nextLine();
+
+  Task tasks = new Task(tittle);
 }
